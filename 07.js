@@ -1,13 +1,13 @@
 // Когда мы хотим прочитать свойство из object, а оно отсутствует, JavaScript автоматически берёт его из прототипа.
 
 // Обратите внимание, что F.prototype означает обычное свойство с именем "prototype" для F. Это ещё не «прототип объекта», а обычное свойство F с таким именем.
-// let animal = {
-//   eats: true,
-// };
+let animal = {
+  eats: true,
+};
 
-// function Rabbit(name) {
-//   this.name = name;
-// }
+function Rabbit(name) {
+  this.name = name;
+}
 
 // Rabbit.prototype = animal;
 
