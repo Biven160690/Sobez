@@ -5,28 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .bar {
+        color: darkorange;
+      }
+      .foo {
+        color: rgb(112, 206, 24);
+      }
+      .text2 { color: red}
+    </style>
   </head>
   <body>
-    <script>
-      "use strict";
-      globalThis.__codeBoxId = "2dn2yk1cbz";
-
-      (async () => {
-                let url = await fetch("https://jsonplaceholder.typicode.com/users");
-
-        let commits = [];
-        if (url.ok) {
-          commits = await url.json();
-          console.log(commits);
-        } else {
-          console.log("Ошибка HTTP: " + url.status);
-        }
-        console.log(url.headers.get("Content-Type"));
-
-        for (let [key, value] of url.headers) {
-          console.log(`${key} = ${value}`);
-        }
-      })();
-    </script>
+    <div >
+<p class="text text1-count1-text">Первый абзац</p>
+<p class="text text2-count2-text">Второй абзац</p>
+<p class="text text3-count3-text">Третий абзац</p>
+</div>
   </body>
 </html>
