@@ -27,6 +27,16 @@
         el: "#app",
         data: {isActive : false}
     });
+    (async () => {
+  let a = await fetch("https://jsonplaceholder.typicode.com/users");
+//   let b = await a.json();
+
+//   console.log(b);
+    console.log(a);
+
+})();
+
+
 </script>
 </body>
 </html>

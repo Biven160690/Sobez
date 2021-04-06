@@ -70,19 +70,44 @@
 // port = 2000 // иы не можем приметивные типы изменять...массив и объекты можем ...
 
 ////===================
-// Замыкание  - функция имеет доступ к  переменным вышестоящего скоупа(функция внутри функции)
+// Замыкание  -  имеет вложеную функцию и эта функция имеет доступ к  переменным вышестоящего скоупа(функция внутри функции)
 
-function sayHelloTo(name) {
-  const message = "Hello " + name;
-  return function () {
-    console.log(message);
-  };
-}
+// function sayHelloTo(name) {
+//   const message = "Hello " + name;
+//   return function (n) {
+//     console.log(message + n);
+//   };
+// }
 
-const helloy = sayHelloTo("Elena"); //  sayHelloTo()  возращает функцию замыкаем  message с 'Elena'
-helloy();
-// const hi = sayHelloTo("Sergey"); //  sayHelloTo()  возращает функцию замыкаем  message с  'Sergey'
-// hi();
+// const helloy = sayHelloTo("Elena"); //  sayHelloTo()  возращает функцию замыкаем  message с 'Elena'
+// helloy(12);
+
+// function a(n) {
+//   return function (num) {
+//     return n + num;
+//   };
+// }
+// const b = a(1)
+// console.log(b(12))
+
+
+
+
+//  function bind(context, fn) {
+//   return function () {
+//       fn.apply(context)
+//  };
+//  }
+
+// function logPerson() {
+//     console.log(`Person: ${this.name}, ${this.age}, ${this.job}`);
+// }
+// const person1 = { name: "Sergey", age: 30, job: "IT" };
+// const person2 = { name: "Nata", age: 28, job: "BY" };
+
+// bind(person1, logPerson)()
+
+
 
 // function cddc() {
 //   const dd = ["Angulat", "Js"];
