@@ -2,8 +2,8 @@
 
 //null, undefaind, string, number, object, boolein, symbol, bigint
 
-// console.log("hi");
 // console.log( typeof "hi");
+// console.log( typeof `hi`);
 // console.log( typeof 15);
 // console.log( typeof true);
 // console.log( typeof null);
@@ -20,21 +20,20 @@
 //     console.log("The best lenguage:", lenguage) 
     // в if значение булион если тру то выведет если нет то нет 
 
-//  // console.log(Boolean(""))
+// console.log(Boolean(""))
 // console.log(Boolean(" "))
 // console.log(Boolean("0"))
 // console.log(Boolean(""))
 // console.log(Boolean("we12"))
 // console.log(null / 2) 
-// console.log(false == '') 
-// console.log(false == {}) 
-// console.log(true == {}) 
-// console.log(false == []) 
-// console.log('' == []) 
-// console.log(''== {}) 
-// console.log(''== 0) 
-// console.log(0 == []) 
-// console.log(0 == {}) 
+console.log(false == '') 
+console.log(false == [])
+console.log(false == {}) 
+console.log('' == []) 
+console.log(''== {}) 
+console.log(''== 0) 
+console.log(0 == []) 
+console.log(0 == {}) 
 // console.log(Boolean({})) 
 // console.log(Boolean([])) 
 // console.log(Boolean(function(){})) 
@@ -49,7 +48,7 @@
 // undefined  переменная была объявлена но нет значения + функции если ничего не возращают то они возращают undefined
 //  null  Это просто специальное значение, которое представляет собой «ничего», «пусто» или «значение неизвестно».
 
-// console.log( 1 + "2" ) //здесь "+" учитываеться как конкатинация так как здесь есть трока (у чисел и у строк есть +)
+// console.log( 1 + 1 + "2" ) //здесь "+" учитываеться как конкатинация так как здесь есть трока (у чисел и у строк есть +)
 // console.log(typeof("" + 1 + 1 - 1)) // 10 для строки не определе "-"  тип будет number
 // console.log(typeof("" + 1 + 0)) //  10 конкатинация тип будет string
 // console.log("" - 1 + 0)//-1
@@ -63,7 +62,6 @@
 
 //console.log('2' > true)
  //console.log('' > true)
-
  //======================= Сравнение строк ==========================
 
  //Сравниваются по «алфавитный» или «лексикографический» порядок (Используется кодировка Unicode, а не настоящий алфавит)

@@ -157,7 +157,7 @@
 // }
 // console.log( test() );
 
-// ==========================В объект мы добавили новое свойство, которое имеет метод chase ================
+// =========В объект мы добавили новое свойство, которое имеет метод chase ================
 
 // var dog = {
 //   breed: "Beagles",
@@ -237,3 +237,49 @@
 
 // // Помните о том, что sayHello() не стоит вызывать как обычную функцию
 // console.log( sayHello() ) ;
+// const person = {
+//     surname: "Старк",
+//     kniws: function (what, name) {
+//         console.log(`Ты ${what} знаешь, ${name} ${this.surname}`)
+//     }
+// }
+// const jons = { surname: 'Берн'}
+// person.kniws('все', 'Бран')
+// person.kniws.call(jons, 'ничего не', 'Джон' )// первым параметром передаем контекст этого объекта а дальше уже используем аргументы индивидуальные
+// person.kniws.apply(jons, ['ничего', '<bdtym'] ) // отличие от  call() у его два параметра и второй это массив
+// const bount = person.kniws.bind(jons, ['ничего', '<bdtym'] ) // все тоже принимет что и остальные методы .... но он возращает новую функицю
+// bount()
+//////////
+
+// function Person(name, age) {
+//     this.name = name
+//     this.age = age
+//     console.log(this) //обращаемся к самому  Person
+
+// }
+// const elens = new Person('Sasha', 25)//работа с классами...this равно все что лежит в переменной elens...передача контекста..
+
+//=======================Явная передача контекста===================
+// function name() {
+//     console.log(this)
+// }
+// const obj = {name:'Sergey'}
+// name.apply(obj)
+// name.call(obj)
+// name.bind(obj)()
+//Работа в контексте стрелочных функции
+// function Cat(color) {
+//     this.color = color
+//     console.log("This", this)
+//     ;( ()=> console.log('gghghh', this) )()
+// }
+// new Cat ('red')
+//======================Неяная передача контекста=======================
+
+// const animal = {
+//   leg: 4,
+//   more: function () { ///к этой функии привязался контекст объекта
+//     console.log(this);
+//   },
+// };
+// animal.more()

@@ -7,8 +7,8 @@
 // console.log(a)
 //  a.splice(2,2,"0","0")
 // console.log(a)
-
-
+//  a.splice(0,2)
+// console.log(a)
 //=================slice=====================
 
 //Он возвращает новый массив, в который копирует элементы, начиная с индекса start и до end....Не изменяя старый!!!!!!
@@ -174,12 +174,12 @@
 // var a = reducer.split(" ")
 // console.log(a)
 
-// var initialValue = 0;
-// var sum = [{x: 1, y: 10}, {x:2, y: 25}, {x:3, y: 2}].reduce(function (accumulator, currentValue) {
-//     return accumulator + currentValue.y;
-// }, initialValue)
+var initialValue = 0;
+var sum = [{x: 1, y: 10}, {x:2, y: 25}, {x:3, y: 2}].reduce(function (accumulator, currentValue) {
+    return accumulator + currentValue.y;
+}, initialValue)
 
-// console.log(sum)
+console.log(sum)
 
 // const array1 = [1, 2, 3, 4];
 // const reducer = (accumulator, currentValue) => accumulator + currentValue;
