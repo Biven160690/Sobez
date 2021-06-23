@@ -24,7 +24,7 @@
 
 // var a = [1, 3]
 // var b = a.concat(1,2)
-// var b = a.concat([1,2])
+// var b = a.concat([4,1,2])
 // console.log(b)
 
 //================================forEach===========================
@@ -41,7 +41,6 @@
 // ["Bilbo", "Gandalf", "Nazgul"].forEach(alert)
 
 // ============================Поиск значений в объекте===========================
-
 // let a = [12, 34, 35, 45]
 // let b = a.includes(35,0)
 // console.log(b)
@@ -63,7 +62,7 @@
 //   {id: 3, name: "Маша"}
 // ];
 
-// var user = users.findIndex (index => index.name == "Вася")
+// var user = users.find(item => item.name == "Вася")
 // console.log(user)
 
 
@@ -174,12 +173,12 @@
 // var a = reducer.split(" ")
 // console.log(a)
 
-var initialValue = 0;
-var sum = [{x: 1, y: 10}, {x:2, y: 25}, {x:3, y: 2}].reduce(function (accumulator, currentValue) {
-    return accumulator + currentValue.y;
-}, initialValue)
+// var initialValue = 0;
+// var sum = [{x: 1, y: 10}, {x:2, y: 25}, {x:3, y: 2}].reduce(function (accumulator, currentValue) {
+//     return accumulator + currentValue.y;
+// }, initialValue)
 
-console.log(sum)
+// console.log(sum)
 
 // const array1 = [1, 2, 3, 4];
 // const reducer = (accumulator, currentValue) => accumulator + currentValue;
@@ -218,8 +217,8 @@ console.log(sum)
 // console.log(arr); // [1, 2, [3, 4], 5, 6]
 
 // var mid = [3, 4];
-// var arr = [1, 2, [...mid], 5, 6];
-// console.log(arr); // [1, 2, 3, 4, 5, 6] 
+// var arr = [1, 2, ...mid, 5, 6];
+// console.log([{...mid}]); // [1, 2, 3, 4, 5, 6] 
 
 
 // var arr = [2, 4, 8, 6, 0];

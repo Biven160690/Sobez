@@ -1,6 +1,14 @@
 //====================Типы данных====================
 
 //null, undefaind, string, number, object, boolein, symbol, bigint
+// function hoisted() {
+//  var age = 26 
+// }
+
+// // var age
+// hoisted()
+// console.log(age)
+
 
 // console.log( typeof "hi");
 // console.log( typeof `hi`);
@@ -14,7 +22,6 @@
 // console.log( typeof 10n);
 // console.log( typeof Infinity);
 // console.log( typeof function(){})
-
 // let lenguage = "null"
 // if (lenguage) {
 //     console.log("The best lenguage:", lenguage) 
@@ -25,15 +32,15 @@
 // console.log(Boolean("0"))
 // console.log(Boolean(""))
 // console.log(Boolean("we12"))
-// console.log(null / 2) 
-console.log(false == '') 
-console.log(false == [])
-console.log(false == {}) 
-console.log('' == []) 
-console.log(''== {}) 
-console.log(''== 0) 
-console.log(0 == []) 
-console.log(0 == {}) 
+// console.log(null * 2) 
+// console.log(false == '') 
+// console.log(false == [])
+// console.log(false == {}) 
+// console.log('' == []) 
+// console.log(''== {}) 
+// console.log(''== 0) 
+// console.log(0 == []) 
+// console.log(0 == {}) 
 // console.log(Boolean({})) 
 // console.log(Boolean([])) 
 // console.log(Boolean(function(){})) 

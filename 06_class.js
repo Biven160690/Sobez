@@ -14,21 +14,21 @@
 
 class Animal {
   static type = "ANIMAL";
-  constructor(options) {
-    this.name = options.name;
-    this.age = options.age;
-    this.hasTail = options.hasTail;
+  constructor(name,age, hasTail) {
+    this.name = name;
+    this.age = age;
+    this.hasTail = hasTail;
   }
   voise() {
     console.log("I am cat");
   }
 }
-const animal = new Animal({
-  name: "Animal",
-  age: 5,
-  hasTail: true,
-});
-// console.log(Animal.prototype)
+const animal = new Animal(
+   "Animal",
+   5,
+  true,
+);
+// console.log(animal.age)
 
 // данный объект являеться наследником класса Animal.
 //  на верхнем урове он берет все что иницилизировано через constructor, а остальные методы ему достумны  из Animal.prototype (в прототипе)
@@ -38,63 +38,64 @@ const animal = new Animal({
 //для того чтоб наследоваться от класса Animal нужно воспользоваться ключевым словом extends
 
 // class Cat extends Animal {}
-// const cat = new Cat({
-//   name: "Cat",
-//   age: 7,
-//   hasTail: true,
-// });
-
+// const cat = new Cat(
+//   "Cat",
+//    7,
+//   true,
+// );
+// console.log(cat.name)
 
 // если мы хотим для класса Cat передавать еще дополнительные параеметры и  хотим присваивать только для класса Cat, мы создаем в дочернем классе конструктор но мы до начала должны вызвать конструктор из родительского класса при помощи super(options)
 
 class Cat extends Animal {
-  constructor(options) {
-   super(options);
-   this.color = options.color;
+  constructor(name, age, hasTail, color) { //здесь мы должны добавить  старые свойьсва + новое которое хотим получить
+   super(name, age, hasTail);
+   this.color = color;
  }
 }
-const cat = new Cat({
-  name: "Cat",
-  age: 7,
-  hasTail: true,
-  color: "Red"
-});
-console.log(cat.color)
+const cat = new Cat(
+  "Cat",
+  7,
+ true,
+ 'Red'
+);
+
+console.log(cat.voise())
 
 
 // мы можем использовать одинаковые методы с родителем....но передавать новые данные.....метод в дочеренем элементе будет перетирать родительский ....но бывает что нам нужно и тот и тот но мы выполним следующее:
 
-class Cat extends Animal {
-  constructor(options) {
-   super(options);
-   this.color = options.color;
- }
- voise(){
-   super.voise() // так мы вызываем метод из родителя
-   console.log("Hi") // метод дочерний
- }
-}
+// class Cat extends Animal {
+//   constructor(options) {
+//    super(options);
+//    this.color = options.color;
+//  }
+//  voise(){
+//    super.voise() // так мы вызываем метод из родителя
+//    console.log("Hi") // метод дочерний
+//  }
+// }
  
 //мы так же мы можем использовать  get and set
 
-class Cat extends Animal {
-  constructor(options) {
-   super(options);
-   this.color = options.color;
- }
- voise(){
-   super.voise() // так мы вызываем метод из родителя
-   console.log("Hi") // метод дочерний
- }
-  get ageInfo() {   //это не метод а простое поле так это get, когда мы вызовем ageInfo у нас будет резудьтат
-  return this.age * 7;
-}
-set ageInfo(newAge) {
-   this.age = newAge; // в консоли мы пропишем cat.ageInfo = 8 и мы изменим this.age и у нас измениться get ageInfo будет другое выражение
- }
+// class Cat extends Animal {
+//   constructor(options) {
+//    super(options);
+//    this.color = options.color;
+//  }
+//  voise(){
+//    super.voise() // так мы вызываем метод из родителя
+//    console.log("Hi") // метод дочерний
+//  }
+//   get ageInfo() {   //это не метод а простое поле так это get, когда мы вызовем ageInfo у нас будет резудьтат
+//   return this.age * 7;
+// }
+// set ageInfo(newAge) {
+//    this.age = newAge; // в консоли мы пропишем cat.ageInfo = 8 и мы изменим this.age и у нас измениться get ageInfo будет другое выражение
+//  }
 
 
-}
+// }
 
 
 

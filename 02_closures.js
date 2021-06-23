@@ -2,7 +2,8 @@
 
 // Инкремент ++ a  и a ++
 // let a = 10
-// let b = a ++
+// let b =  ++ a 
+// console.log(b);
 
 // b ++
 // // console.log("b:", a)
@@ -172,7 +173,7 @@
 //  }// замыкание второй способ
 // const fib = [1, 2, 3, 5, 8, 13]
 // for (var i = 0; i < fib.length; i ++) {
-//     (function(j) {
+//     (function(j) {           
 //       setTimeout(function(){
 //         console.log(`fib [${j}] = ${fib[j]}`)
 //     }, 1500)
