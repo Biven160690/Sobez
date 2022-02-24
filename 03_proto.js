@@ -28,7 +28,7 @@
   //alert( rabbit.jumps ); // true
 
   //Когда объекты созданы одинаковыми классами(типы их равны) то и их __proto__ будут равны:
-
+ 
 //   let a = {}
 //   let b = {}
 //   console.log(a.__proto__ == b.__proto__)

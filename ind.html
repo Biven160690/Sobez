@@ -1,18 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</style>
-</head>
-<body>
-  <script>
-a = 12;
-console.log(a);
-var a
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <style>
+      body {
+        width: 500px;
+        height: 1400px;
+        margin: 0 auto;
+      }
 
-  </script>
-</body>
+      p {
+        background: aqua;
+        border: 3px solid blue;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      span {
+        background: red;
+        border: 1px solid black;
+      }
+
+      h1 {
+        position: fixed;
+        top: 100px;
+        width: 500px;
+        margin-top: 0;
+        background: white;
+        padding: 10px;
+      }
+
+      p:nth-of-type(1) {
+        margin-top: 60px;
+      }
+    </style> -->
+  </head>
+  <body>
+    <div class='div'>First div</div>
+
+    <script>
+      let divs = document.getElementsByTagName("div");
+
+      let divsTwo = document.querySelector('.div');
+      divsTwo.innerHTML = 'Hello'
+      // alert(divs.length); // 1
+      // alert(divsTwo.length); // 1
+
+    </script>
+
+    <div>Second div</div>
+
+    <script>
+      // alert(divs.length); // 2
+      // alert(divsTwo.length); // 1
+
+    </script>
+    <script>
+      // class Whell {
+      //   constructor(whell) {
+      //     this.count = whell;
+      //   }
+      // }
+
+      // class Engine {
+      //   constructor(engine) {
+      //     this.power = engine;
+      //   }
+      //   say() {
+      //     console.log("hi");
+      //   }
+      // }
+
+      // class Car {
+      //   constructor(engine, whell) {
+      //     this.engine = new Engine(engine);
+      //     this.whell = new Whell(whell);
+      //   }
+      // }
+
+      // let car = new Car();
+      car.engine.say();
+
+      // let a = nata.bar()
+
+      // console.log(a)
+      // function data() {
+      //   return this.name;
+      // }
+      // // console.log(data.call(4, 4));
+      // console.log(data.apply('nata', [1, 2]));
+      // let a = data.bind(nata);
+      // let b = a.bind(nata2);
+      // console.log(a());
+      // console.log(b());
+      // let rabbit = [1, 2]
+      // Object.setPrototypeOf(rabbit, animal)
+      // console.log(animal.__proto__ === Object.prototype)// true
+      // console.log(rabbit.__proto__ === animal) // true
+      // console.log(rabbit.__proto__.__proto__ === Object.prototype) //true
+      // console.log(rabbit == Array.prototype) //false
+      // console.dir(rabbit)
+      // class Samurai {
+      //   constructor(name) {
+      //     this.name = name;
+      //   }
+      //   hello() {
+      //     alert(this.name);
+      //   }
+      // }
+
+      // let shogun = new Samurai("Sergey");
+      // console.log(shogun.__proto__ === Samurai.prototype);
+      // console.log(shogun.__proto__.__proto__ === Object.prototype);
+      // console.log(
+      //   shogun.__proto__.constructor.__proto__ === Function.prototype
+      // );
+      // console.log(shogun.__proto__);
+
+      // class Menu {
+      //   constructor(elem) {
+      //     this._elem = elem;
+      //     elem.onclick = this.onClick.bind(this); // (*)
+      //   }
+
+      //   save() {
+      //     alert("сохраняю");
+      //   }
+
+      //   load() {
+      //     alert("загружаю");
+      //   }
+
+      //   search() {
+      //     alert("ищу");
+      //   }
+
+      //   onClick(event) {
+      //     let action = event.target.dataset.action;
+      //     if (action) {
+      //       this[action]();
+      //     }
+      //   }
+      // }
+
+      // // let data = document.getElementById("menu");
+      // // let menu = data.addEventListener("click", (e) => e);
+      //  new Menu(menu);
+      // ser.onClick(menu);
+      // let div = document.querySelector(".sas");
+      // div.addEventListener("click", function (e) {
+      //   console.log(event.target.closest("div"));
+      // });
+      // let div2 = document.querySelector(".wew");
+      // div.addEventListener(
+      //   "click",
+      //   function (e) {
+      //     alert(e.target.value);
+      //   },
+      //   { capture: true }
+      // );
+
+      // addEventListner('click', function (){
+
+      // })
+      // let div = document.createElement("div");
+      // let text = document.createTextNode("Hi my name is Sergey");
+      // div.innerHTML = "<p> Hi my name is Sergey </p>";
+      // document.body.append("Hi my name is Sergey")
+    </script>
+  </body>
 </html>

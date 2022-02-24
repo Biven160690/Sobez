@@ -122,13 +122,13 @@
 //============================= Синтаксис============================
 
 
-let promise = new Promise(function(resolve, reject){
-resolve("done!")
-// функция-исполнитель
-})
-promise.then(
-  result => console.log(result),
-  error => console.log(error))
+// let promise = new Promise(function(resolve, reject){
+// resolve("done!")
+// // функция-исполнитель
+// })
+// promise.then(
+//   result => console.log(result),
+//   error => console.log(error))
 
 
 // Функция, переданная в конструкцию new Promise, называется исполнитель (executor). Когда Promise создаётся, она запускается автоматически.
