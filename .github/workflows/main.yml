@@ -5,23 +5,36 @@ on:
 
 jobs:
   eslint:
+    name: Run linters
     runs-on: windows-latest
     steps:
+      - name: Check out Git repository
       - uses: actions/checkout@v2
+      
+      - name: Set up Node.js
       - uses: actions/setup-node@v1
         with:
           node-version: 14
+          
+      - name: Install dependencies
       - run: npm ci
-        name: Lint
+      
+      - name: Lint
       - run: npm run lint
 
   test:
+    name: Run Tests
     runs-on: windows-latest
+
     steps:
+      - name: Check out Git repository
       - uses: actions/checkout@v1
+      
+      - name: Set up Node.js
       - uses: actions/setup-node@v1
         with:
           node-version: 14
+      - name: Install dependencies
       - run: npm ci
       - run: npm test
 
