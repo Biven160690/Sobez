@@ -12,22 +12,22 @@
 //  в  constructor в аргумент я передаю объект (options) из объекта  стр. 45 const animal, мы так же можем передавать и просто данные бкз объекта.....
 //  constructor нужен для инициализация  объекта
 
-class Animal {
-  static type = "ANIMAL";
-  constructor(name,age, hasTail) {
-    this.name = name;
-    this.age = age;
-    this.hasTail = hasTail;
-  }
-  voise() {
-    console.log("I am cat");
-  }
-}
-const animal = new Animal(
-   "Animal",
-   5,
-  true,
-);
+// class Animal {
+//   static type = "ANIMAL";
+//   constructor(name,age, hasTail) {
+//     this.name = name;
+//     this.age = age;
+//     this.hasTail = hasTail;
+//   }
+//   voise() {
+//     console.log("I am cat");
+//   }
+// }
+// const animal = new Animal(
+//    "Animal",
+//    5,
+//   true,
+// );
 // console.log(animal.age)
 
 // данный объект являеться наследником класса Animal.
